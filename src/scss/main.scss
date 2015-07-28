@@ -1,0 +1,24 @@
+/* =========================================================================
+
+    Project: exercise
+    Author: 
+    Last updated: @@timestamp
+@@toc
+
+   ========================================================================= */
+
+// Vendor Dependencies
+@import "normalize.css/normalize";
+
+// Authored Dependencies
+@import "setup/variables";
+@import "setup/mixins";
+
+
+
+// Common styles & layouts
+@import "common/base";
+@import "common/utilities";
+@import "common/layout";
+
+// Components
