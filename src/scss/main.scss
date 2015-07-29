@@ -25,7 +25,144 @@
 // Components
 
 
+
 body {
-	background: linear-gradient( to bottom, white, white 40%, $blue 40%, $blue );
-	background-size: 180%;
+	color: $gray;
+}
+
+.main-header {
+	padding: 10px 0;
+	background: $gray-darker;
+	img {
+		width: 115px;
+	}
+}
+
+.border-shadow {
+	box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+	padding: $container-padding;
+}
+
+.main-box {
+	background: white;
+	margin-top: 60px;
+	text-align: center;
+	h1 {
+		color: $blue;
+	}
+}
+
+form {
+	padding-top: 20px;
+	input[type="submit"] {
+		background: $green;
+		border-bottom: 4px solid $green-darker;
+		color:  white;
+		margin: 20px 0;
+		padding: 5px;
+		width: 100%;
+	}
+	input,
+	select {
+		width: 100%;
+	}
+	input[type="submit"] {
+		font-size: $font-size-large;
+	}
+}
+
+@media (min-width: $screen-md) {
+	.form-group {
+		float: left;
+		margin: 10px;
+		width: 45%;
+		label {
+			display: block;
+			text-align: left;
+			margin-bottom: 10px
+		}
+	}
+}
+
+@media (max-width: $screen-md) {
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+	.form-group {
+		margin: 20px auto;
+		width: 70%;
+		&:before,
+  	&:after {
+    	content: " ";
+    	display: table;
+  	}
+  	&:after {
+    	clear: both;
+  	}
+		label {
+			float: left;
+		}
+		input,
+		select {
+			float: right;
+			width: 60%;
+		}
+	}
+}
+
+@media (min-width: $screen-sm) {
+	body {
+		background: linear-gradient( to bottom, white, white 50%, $blue 50%, $blue );
+		background-size: 100%;
+	}
+}
+
+@media (max-width: $screen-sm) {
+	header.secondary-header {
+		border-bottom: 5px solid $blue;
+		padding-bottom: 10px;
+		width: 100%;
+		h1 span {
+			display: block;
+		}
+	}
+	.border-shadow {
+		box-shadow: none;
+		padding: 0;
+	}
+	form {
+		background: $gray-lighter;
+		display: block;
+		height: 100px; 
+		.form-group {
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%;
+			label {
+				display: none;
+			}
+			input,
+			select {
+				float: left;
+				margin: 0;
+				width: 30%;
+			}
+			input.full-row,
+			select.full-row {
+				width: 100%;
+			}
+			input.half-row,
+			select.half-row {
+				width: 50%;
+			}
+		}
+		input[type="submit"] {
+	  	width: 90% !important;
+		}
+	}
 }

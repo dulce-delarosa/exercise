@@ -1,55 +1,60 @@
 @@include('head.html', {"pagename": "“Home”"})
 
 <body>
-
- <div>
-      <div>
-        <div>
-          <div>
-            <div>
-              <h1>Cotiza tu Seguro Automotriz</h1>
-              <h2>¡Resultados Instantáneos!</h2>
-            </div>
-            <div>
-            <form>
-              <ul>
-                <li>
-                  <label for="marca_del_auto">Marca del auto</label>
-                    <select id="marca_del_auto" name="marca_del_auto">
-                      <option>Opel</option>
-                      <option>Corsa</option>
-                      <option>Hola</option>
-                    </select>
-                </li> 
-                <li class="modelo_del_auto">
-                  <label for="modelo_del_auto">Modelo del auto</label>
-                    <select id="modelo_del_auto" name="modelo_del_auto">
-                      <option value="1">Modelo 1</option>
-                      <option>Modelo 2</option>
-                      <option>Modelo 3</option>
-                    </select>
-                </li>
-                <li>
-                  <label for="ano_auto">Año auto</label>
-                  <select id="ano_auto" name="ano_auto">
-                    <option>1999</option>
-                    <option>2005</option>
-                    <option>2014</option>
-                  </select>
-                </li>
-                <li>
-                  <label for="email">Email</label>
-                  <input type="text" id="email" name="email" />
-                </li>
-              </ul>
-              <div style="clear:both"></div>
-              <input type="submit" name="submit" id="cotizar" Value="Cotizar">
-              </form>   
-            </div>
-          </div>
-        </div>
-      </div>
+  <header class="main-header">
+    <div class="container">
+      <img src="./img/logo.png"/>
     </div>
+  </header>
+  <section class="main-box border-shadow">
+    <header class="secondary-header">
+      <h1>
+        <span>Cotiza tu</span>
+        <span>Seguro Automotriz</span>
+      </h1>
+      <p>¡Resultados Instantáneos!</p>
+    </header>
+
+    <form>
+      
+      <div class="form-group">
+        <label for="marca_del_auto">Marca del auto</label>
+        <select class="full-row" id="marca_del_auto" name="marca_del_auto">
+          <option>Opel</option>
+          <option>Corsa</option>
+          <option>Hola</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="modelo_del_auto">Modelo del auto</label>
+        <select class="half-row" id="modelo_del_auto" name="modelo_del_auto">
+          <option value="1">Modelo 1</option>
+          <option>Modelo 2</option>
+          <option>Modelo 3</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="ano_auto">Año auto</label>
+        <select class="half-row" class="year-auto" id="ano_auto" name="ano_auto">
+          <option>1999</option>
+          <option>2005</option>
+          <option>2014</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="full-row" type="text" id="email" name="email" />
+      </div>
+
+      <input type="submit" name="submit" id="cotizar" Value="Cotizar">
+      <a href="#"> Recuperar cotizacion </a>
+
+    </form>
+
+  </section>
 
 </body>
 </html>
