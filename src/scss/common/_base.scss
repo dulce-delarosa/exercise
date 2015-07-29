@@ -33,10 +33,13 @@ a {
 
 input,
 select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: 1px solid $gray-light;
   border-radius: 0;
   outline: 0;
-  padding: 5px;
+  padding: 10px;
 }
 
 input[type="text"],
@@ -46,4 +49,9 @@ select {
 
 input[type="submit"] {
   border: none;
+}
+
+select {
+  background: white url("../img/down-arrow.png") no-repeat 96% center;
+  background-size: 12px;
 }
