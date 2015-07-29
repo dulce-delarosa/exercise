@@ -15,16 +15,35 @@ html {
 
 body {
   font-family: $font-arial;
-  font-size: $font-size;
+  font-size: $font-size-base;
   line-height: $font-line-height;
 }
 
 a {
-  color: $color-red;
+  color: $blue;
+  display: block;
+  font-size: $font-size-smaller;
   text-decoration: none;
 
   &:hover {
-    color: $color-red;
+    color: $blue;
     text-decoration: underline;
   }
+}
+
+input,
+select {
+  border: 1px solid $gray-light;
+  border-radius: 0;
+  outline: 0;
+  padding: 5px;
+}
+
+input[type="text"],
+select {
+  background: white;
+}
+
+input[type="submit"] {
+  border: none;
 }
