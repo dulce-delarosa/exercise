@@ -116,9 +116,10 @@ form {
 }
 
 @media (min-width: $screen-sm) {
-	body {
-		background: linear-gradient( to bottom, white, white 50%, $blue 50%, $blue );
-		background-size: 100%;
+	.stripes {
+		background-image: linear-gradient(to bottom, white, white 30%, $blue 30%, $blue 75%, white 75%, white);
+		background-size: 2000px 600px;
+		height: 300px;
 	}
 }
 
