@@ -21,4 +21,11 @@
 @import "common/utilities";
 @import "common/layout";
 
+
 // Components
+
+
+body {
+	background: linear-gradient( to bottom, white, white 40%, $blue 40%, $blue );
+	background-size: 180%;
+}

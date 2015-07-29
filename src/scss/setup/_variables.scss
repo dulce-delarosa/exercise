@@ -4,16 +4,28 @@
 
 // Color definitions
 $color-red: #EF4C23 !default;
+$blue:             #00ACDD;
+
+$gray:             #999999;
+$gray-darker:      #444444;
+
+$green:            #B2D44D;
+$green-darker:     #94BC25;
+
 
 // Container definitions
 $container-width: 960px !default;
 $container-padding: 20px !default;
 
+
 // Z-indexes
 $zindex-base: 1 !default;
 
+
 // Font definitions
-$font-arial: "Arial", "Helvetica Neue", Helvetica, serif !default;
+$font-arial: "Open Sans", "Helvetica Neue", Helvetica, serif !default;
 $font-size: 1.6em !default;
 $font-line-height: 1.4 !default;
+
+
 
