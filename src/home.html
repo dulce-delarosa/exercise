@@ -16,7 +16,7 @@
     </header>
 
     <form>
-      
+
       <div class="form-group">
         <label for="marca_del_auto">Marca del auto</label>
         <select class="full-row" id="marca_del_auto" name="marca_del_auto">
@@ -55,6 +55,22 @@
     </form>
 
   </section>
+
+  <script>
+  $(function() {
+    if (window.PIE) {
+        $('.dulce').each(function() {
+          PIE.attach(this);
+        });
+        $('.stripes').each(function() {
+          PIE.attach(this);
+        });
+        $('.border-shadow').each(function() {
+          PIE.attach(this);
+        });
+    }
+  });
+  </script>
 
 </body>
 </html>

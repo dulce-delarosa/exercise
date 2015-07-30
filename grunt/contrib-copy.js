@@ -19,8 +19,8 @@ module.exports = function(grunt) {
 
     pie: {
       expand: true,
-      cwd: '<%= xh.src %>/js/',
-      src: ['PIE.htc'],
+      cwd: '<%= xh.src %>/bower_components/css3pie/',
+      src: ['PIE.js'],
       dest: '<%= xh.dist %>/js/'
     },
 
