@@ -61,6 +61,8 @@ module.exports = function (grunt) {
     'build-js',
     'build-beautify',
 
+    'cssmin:main',
+
     'clean:tmp',
     'notify:build'
   ]);

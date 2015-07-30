@@ -37,6 +37,13 @@ module.exports = function(grunt) {
       ]
     },
 
+    js: {
+      expand: true,
+      cwd: '<%= xh.src %>/js/',
+      src: ['main.js'],
+      dest: '<%= xh.dist %>/js/'
+    },
+
     // copy all include files to temporary folder
     // so that original includes aren't ever modified
     includes: {
