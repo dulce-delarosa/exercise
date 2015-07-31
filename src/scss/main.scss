@@ -44,7 +44,7 @@ body {
 }
 
 .border-shadow {
-	box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+	box-shadow: 0 0 10px $gray;
 	padding: $container-padding;
 }
 
@@ -80,7 +80,7 @@ form {
 
 @media (min-width: $screen-md) {
 	.main-box {
-		margin-top: 60px;
+		margin: 60px auto;
 	}
 	.form-group {
 		float: left;
@@ -104,7 +104,7 @@ form {
 
 @media (min-width: $screen-sm) and (max-width: $screen-md) {
 	.main-box {
-		margin-top: 60px;
+		margin: 60px auto;
 	}
 	.form-group {
 		margin: 20px auto;
@@ -133,7 +133,7 @@ form {
 		background-image: linear-gradient(to bottom, white, white 30%, $blue 30%, $blue 75%, white 75%, white);
 		background-size: 2000px 800px;
 		height: 300px;
-		-pie-background: linear-gradient(white, white 60%, $blue 60%, $blue 100%, white 100%, white);
+		-pie-background: linear-gradient(white, white 50%, $blue 50%, $blue 100%, white 100%, white);
 	}
 }
 

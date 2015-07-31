@@ -54,8 +54,12 @@ input[type="submit"] {
 }
 
 select {
-  background-image: white url("../img/down-arrow.png") no-repeat 96% center;
+  background: white url("../img/down-arrow.png") no-repeat 96% center;
   background-size: 12px;
+  option.hidden {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 select::-ms-expand {
